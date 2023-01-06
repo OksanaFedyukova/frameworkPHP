@@ -11,9 +11,10 @@ return [
        //
     ],
     'admin'=> [
-       'logout',
-       'add',
-       'edit',
-       'delete',
+      'posts',
+		'logout',
+		'add',
+		'edit',
+		'delete',
     ],
 ];

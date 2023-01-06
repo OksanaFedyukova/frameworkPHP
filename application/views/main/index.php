@@ -4,7 +4,7 @@
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
                     <h1>Ukrainian Women</h1>
-                    <span class="subheading">This is a blog of a Ukrainian  Woman about ukrainian Women</span>
+                    <span class="subheading">This is a blog of a Ukrainian  Woman about Famous Ukrainian Women</span>
                 </div>
             </div>
         </div>

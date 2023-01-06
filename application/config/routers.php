@@ -51,6 +51,4 @@
                 'controller' => 'admin',
                 'action' => 'posts',
             ],
-            
-
         ];
