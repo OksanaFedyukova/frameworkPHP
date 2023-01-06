@@ -1,8 +1,13 @@
 <?php
+
         return[
             //MainController
             '' => [
                 'controller'=> 'main',
+                'action' => 'index',
+            ],
+            'main/index/{page:\d+}' => [
+                'controller' => 'main',
                 'action' => 'index',
             ],
             'about' => [
@@ -13,30 +18,38 @@
                 'controller' => 'main',
                 'action' => 'contact',
             ],
-            'post'=> [
+            'post/{id:\d+}'=> [
                 'controller' => 'main',
                 'action' => 'post',
             ],
              //AdminController
-             'login'=> [
+             'admin/login'=> [
                 'controller' => 'admin',
                 'action' => 'login',
             ],
-            'logout'=> [
+            'admin/logout'=> [
                 'controller' => 'admin',
                 'action' => 'logout',
             ],
-            'add'=> [
+            'admin/add'=> [
                 'controller' => 'admin',
                 'action' => 'add',
             ],
-            'adit'=> [
+            'admin/edit{id:\d+}'=> [
                 'controller' => 'admin',
-                'action' => 'adit',
+                'action' => 'edit',
             ],
-            'delete'=> [
+            'admin/delete{id:\d+}'=> [
                 'controller' => 'admin',
                 'action' => 'delete',
+            ],
+            'admin/posts/{page:\d+}' => [
+                'controller' => 'admin',
+                'action' => 'posts',
+            ],
+            'admin/posts' => [
+                'controller' => 'admin',
+                'action' => 'posts',
             ],
             
 
