@@ -12,13 +12,13 @@ class Main extends Model {
 		$nameLen = iconv_strlen($post['name']);
 		$textLen = iconv_strlen($post['text']);
 		if ($nameLen < 3 or $nameLen > 20) {
-			$this->error = 'Имя должно содержать от 3 до 20 символов';
+			$this->error = 'Name should be from 3 to 20 symbols';
 			return false;
 		} elseif (!filter_var($post['email'], FILTER_VALIDATE_EMAIL)) {
-			$this->error = 'E-mail указан неверно';
+			$this->error = 'E-mail is not valid';
 			return false;
 		} elseif ($textLen < 10 or $textLen > 500) {
-			$this->error = 'Сообщение должно содержать от 10 до 500 символов';
+			$this->error = 'from 10 till 500';
 			return false;
 		}
 		return true;

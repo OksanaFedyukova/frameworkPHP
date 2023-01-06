@@ -11,6 +11,7 @@ class Pagination {
     private $total;
     private $limit;
 
+
     public function __construct($route, $total, $limit = 10) {
         $this->route = $route;
         $this->total = $total;
@@ -32,10 +33,10 @@ class Pagination {
         }
         if (!is_null($links)) {
             if ($this->current_page > 1) {
-                $links = $this->generateHtml(1, 'Вперед').$links;
+                $links = $this->generateHtml(1, 'ahead').$links;
             }
             if ($this->current_page < $this->amount) {
-                $links .= $this->generateHtml($this->amount, 'Назад');
+                $links .= $this->generateHtml($this->amount, 'back');
             }
         }
         $html .= $links.' </ul></nav>';

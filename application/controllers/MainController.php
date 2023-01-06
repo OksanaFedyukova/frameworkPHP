@@ -26,7 +26,7 @@ class MainController extends Controller {
 			if (!$this->model->contactValidate($_POST)) {
 				$this->view->message('error', $this->model->error);
 			}
-			mail('titef@p33.org', 'Message from Blog', $_POST['name'].'|'.$_POST['email'].'|'.$_POST['text']);
+			mail('cesobot309@cmeinbox.com', 'Message from Blog', $_POST['name'].'|'.$_POST['email'].'|'.$_POST['text']);
 			$this->view->message('success', 'Your Message has been Send to Admin');
 		}
 		$this->view->render('Contact Me');
@@ -40,7 +40,7 @@ class MainController extends Controller {
 		$vars = [
 			'data' => $adminModel->postData($this->route['id'])[0],
 		];
-		$this->view->render('Пост', $vars);
+		$this->view->render('POST', $vars);
 	}
 
 }

@@ -1,6 +1,8 @@
 <?php
 
 require 'application/lib/Dev.php';
+require 'application/lib/Db.php';
+require 'application/lib/Pagination.php';
 
 use application\core\Router;
 
@@ -12,6 +14,7 @@ spl_autoload_register(function($class) {
 });
 
 session_start();
+$db = mysqli_connect('localhost', 'root', '', 'posts');
 
 $router = new Router;
 $router->run();

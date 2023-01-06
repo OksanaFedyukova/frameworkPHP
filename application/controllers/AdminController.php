@@ -24,7 +24,7 @@ class AdminController extends Controller {
 			$_SESSION['admin'] = true;
 			$this->view->location('admin/add');
 		}
-		$this->view->render('Вход');
+		$this->view->render('ENTRY');
 	}
 
 	public function addAction() {
@@ -82,6 +82,6 @@ class AdminController extends Controller {
 			'pagination' => $pagination->get(),
 			'list' => $mainModel->postsList($this->route),
 		];
-		$this->view->render('Посты', $vars);
+		$this->view->render('POSTS', $vars);
 	}
 }
